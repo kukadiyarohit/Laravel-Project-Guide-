@@ -1,0 +1,55 @@
+project modules 
+
+✅ [Module 1] Laravel Setup + Auth
+laravel new jobportal
+
+Install auth (php artisan make:auth OR Jetstream/Breeze)
+
+Create migration: users table modify with role column (admin/user)
+
+✅ [Module 2] Job Category CRUD
+Migration: job_categories (id, name, created_at)
+
+Controller: JobCategoryController
+
+Views: Index + Create/Edit/Delete with all input types (select, text, checkbox)
+
+Add @csrf, validation, success message using session
+
+Add jQuery submit, click events
+
+✅ [Module 3] Job Post CRUD
+Migration: jobs (title, description, job_type (radio), salary (number), location, category_id (select), created_by (user_id))
+
+Add joins to show job + category
+
+Add filters with where, IN, NOT IN
+
+Add AJAX for form submit & job apply
+
+✅ [Module 4] Apply to Job
+Migration: job_applications (job_id, user_id, status)
+
+User side: List of jobs → Apply button with data-job-id
+
+jQuery event + AJAX call with JSON response
+
+Flash message via session after apply
+
+✅ [Module 5] Blade Layouts (Header/Footer)
+resources/views/components/header.blade.php
+
+@include('components.header') in main layout
+``
+Add login/logout in header dynamically
+
+✅ [Module 6] Session & Cookie
+Show session flash messages on apply/save/delete
+
+Use cookie for job preference filter (e.g., remember last selected job type)
+
+✅ [Module 7] Library Use (Bonus)
+Install: e.g. barryvdh/laravel-dompdf for job report
+
+Use library to generate PDF of job list
+
